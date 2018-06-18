@@ -1,35 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title>Top 20 parallax</title>
 	<!-- W3  social media icons link -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="styles/top20.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+	    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120214260-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-120214260-1');
+</script>
+
 </head>
 <body>
-	<div id="topnav">
-		<div class="mobmenu">
-			<button onclick="mobMenu()" id="dropbtn" class="fa fa-bars"></button>
-			<div id="mobDropdown" class="dropdown-content">
-				<a href="Projects.html">Projects</a>
-				<a href="#">Request CV</a>
-				<a href="#">About</a>
-			</div>
-		</div>
-			<h1>Nick Hoggett</h1>
-		<span id="options">
-			<a href="Projects.html">Projects</a>
-			<a href="mailto:nick.hoggett@gmail.com?Subject=Please%20send%20your%20CV">Request CV</a>
-			<a href="#">About</a>
-		</span>
-		<div id="socmedia">
-			<a href="https://uk.linkedin.com/in/nick-hoggett-861a929b" class="fa fa-linkedin-square"></a>
-			<a href="https://www.instagram.com/nickhoggett/" class="fa fa-instagram"></a>
-			<a href="https://www.facebook.com/nick.hoggett" class="fa fa-facebook-square"></a>
-			<a href="https://twitter.com/nickhoggett" class="fa fa-twitter-square"></a>
-		</div>	
-	</div>
+	 <nav id="topnav">
+    <div class="mobmenu">
+      <button onclick="mobMenu()" id="dropbtn" class="fa fa-bars"></button>
+      <div id="mobDropdown" class="dropdown-content">
+        <a href="index.html#about">About</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </div>
+      <h1><a href="index.html">Nick Hoggett</a></h1>
+    <span id="options">
+    	<a href="index.html#about">About</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#contact">Contact</a>
+    </span>
+    <div id="socmedia">
+      <a class="fa fa-github" href="https://github.com/nickhoggett"></a>
+      <a class="fa fa-codepen" href="https://codepen.io/nickhoggett/"></a>
+      <a class="fa fa-free-code-camp" href="https://www.freecodecamp.org/portfolio/nickhoggett"</a>
+      <a class="fa fa-instagram" href="https://www.instagram.com/nickhoggett/"></a>
+      <a class="fa fa-twitter" href="https://twitter.com/nickhoggett"></a>
+    </div>  
+  </nav>
 	<article>
 		<h2>My Top 20 Albums of 2017</h2>
 		<div class="parallax"></div>
@@ -153,42 +168,15 @@
 				<h3><span class="position">1.</span> Lorde - Melodrama</h3>
 			</div>
 		</div>
-		<p>She’s outgrown her youthful seriousness, dancing joyously like no one’s looking, even though 10,000 are, though I wasn't taken on the opening single Green Light this album surprised me so much. It was delightful to hear a pop album which turns out to be a great adult and matured record.</p>
+		<p>She has outgrown her youthful seriousness, dancing joyously like no one is looking, even though 10,000 are, though I wasn't taken on the opening single Green Light this album surprised me so much. It was delightful to hear a pop album which turns out to be a great adult and matured record.</p>
 	</article>
-		<script type="text/javascript">
-		//alert(document.body.clientWidth);
-
-		/*when user clicks on the button, toggle between hidding and showing the dropdown content */
-
-		function mobMenu() {
-			document.getElementById("mobDropdown").classList.toggle("show");
-		}
-
-		//Close the dropdown if the user clicks outisde of it. 
-		window.onclick = function(event) {
-			if (!event.target.matches(".dropbtn")) {
-
-				var dropdowns = document.getElementByClassName("dropdown-content");
-				var i;
-				for (i = 0; i < dropdowns.length; i++) {
-					var openDropdown = dropdowns[i];
-					if (openDropdown.classList.contains("show"));{
-						openDropdown.classList.remove("show");
-					}
-				}
-			}
-		}
-	</script>
 	<footer>
-		<p>Contact Details: </p>
-		<p>Email me: <a href="mailto:nick.hoggett@gmail.com?Subject=Hello%20Nick">nick.hoggett@gmail.com</a></p>
-		<p>Social Media:</p>
-		<div id="socmediafooter">
-			<a href="https://uk.linkedin.com/in/nick-hoggett-861a929b" class="fa fa-linkedin-square"></a>
-			<a href="https://www.instagram.com/nickhoggett/" class="fa fa-instagram"></a>
-			<a href="https://www.facebook.com/nick.hoggett" class="fa fa-facebook-square"></a>
-			<a href="https://twitter.com/nickhoggett" class="fa fa-twitter-square"></a>
-		</div>
-	</footer>
+    <p>All written and coded by: Nick Hoggett</p>
+     <a class="fa fa-github" href="https://github.com/nickhoggett"></a>
+      <a class="fa fa-codepen" href="https://codepen.io/nickhoggett/"></a>
+      <a class="fa fa-free-code-camp" href="https://www.freecodecamp.org/portfolio/nickhoggett"</a>
+      <a class="fa fa-instagram" href="https://www.instagram.com/nickhoggett/"></a>
+      <a class="fa fa-twitter" href="https://twitter.com/nickhoggett"></a>
+  </footer>
 </body>
 </html>
